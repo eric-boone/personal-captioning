@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000 !important;
+  padding: 10px;
+}
+
+.card-body.characterCreator::-webkit-scrollbar {
+    width: 2px;
+}
+ 
+.card-body.characterCreator::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px grey;
+}
+ 
+.card-body.characterCreator::-webkit-scrollbar-thumb {
+  background-color: orange;
+  outline: 1px solid grey;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.active-slide {
+  border-left: 2px solid orange;
+  padding-left: 3px;
+}
+
+a.text-light:hover,
+a.text-light:focus {
+  color: #343a40 !important;
+}
+
+span#inputGroup-sizing-sm {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.selected-color-box {
+  height: 20px;
+  width: 20px;
+}
+
+.github-picker {
+  width: 520px !important;
+  position: absolute !important;
+}
+
+.github-picker > div:nth-child(1),
+.github-picker > div:nth-child(2) {
+  display: none;
+}
+
+button.input-group-prepend.pointer {
+  height: 38px;
+}
+
+.input-group-prepend.name-picker > div {
+  width: 200px;
+  color: black !important;
+}
+
+input.form-control {
+  min-height: 38px;
+}
+
+.card.edit-character-modal {
+    position: absolute;
+    z-index: 1000;
+    right: -20px;
+    /* top: 50%; */
+    background-color: #000000;
+    border: 1px solid orange;
+    border-radius: 0;
+}
+
+.card.edit-character-modal input.form-control {
+    border-radius: 0;
+}
+
+.card {
+  border: none;
+}
+
+.card.slides {
+  border: none;
+}
+
+.card-header.slides {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #000000;
+}
+
+.card.characterCreator {
+  background-color: #000000;
+}
+
+.card-header.slides > p,
+.card-header.addSlide > p {
+  margin-bottom: 0;
+}
+
+.card.addSlide {
+  border: none;
+}
+
+.card-header.addSlide {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #000000;
+}
+
+.card-body.addSlide {
+  background-color: #000000;
+}
+
+.card-body.slide {
+  background-color: #000000;
+  border-bottom: 1px solid #3a3939;
+}
+
+.card-body.characterCreator {
+  padding: 0 20px 0 0;
+  height: 400px;
+  overflow: auto;
+}
+
+.col-sm.selected-color-box {
+  min-width: 30px;
+}
+
+.color-picker-icon {
+  padding: 0 10px;
+}
+
+.card-body.border-bottom.border-dark {
+  background-color: black;
+}
+
+table.table.characterCreator {
+  color: white;
+}
+
+table.table.characterCreator thead tr th {
+    font-weight: 400;
+}
+
+#add-slide-form > div > div > div {
+    border-radius: 0;
+}
+
+input.form-control {
+    color: white;
+    background-color: black;
+}
+
+button.input-group-prepend.pointer {
+    background-color: black;
+}
+
+span#inputGroup-sizing-sm {
+    color: orange;
+}
+
+form#add-slide-form .input-group .name-picker > [class$="control"] {
+    background-color: black;
+}
+
+form#add-slide-form .input-group .name-picker [class$="singleValue"] {
+  color: white;
+}
+
+
+/* bootstrap overrides */
+body .btn {
+  border-radius: 0;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.card-header.col.align-self-start {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.table.characterCreator thead th {
+  border: none;
+}
+
+.table.characterCreator th,
+.table.characterCreator td {
+  border-top: 1px solid #3a3939;
+}
+
+body .input-group-sm > .form-control,
+body .input-group-sm > .custom-select,
+body .input-group-sm > .input-group-prepend > .input-group-text,
+body .input-group-sm > .input-group-append > .input-group-text,
+body .input-group-sm > .input-group-prepend > .btn,
+body .input-group-sm > .input-group-append > .btn {
+  border-radius: 0;
+}
+
+@media print {
+  .text-light.print-show {
+    color: black;
+  }
+  thead {
+    color: black;
+  }
+  tbody {
+    color: black;
+  }
+}
