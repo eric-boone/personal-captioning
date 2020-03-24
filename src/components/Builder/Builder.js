@@ -15,7 +15,7 @@ function Builder() {
 
   const showToEditHandler = event => {
     setShowID(event);
-    // console.log("Builder - showToEditHandler");
+    // console.log("Builder - showToEditHandler", showID);
   };
 
   return (
@@ -40,7 +40,7 @@ function Builder() {
         <div className="row">
           <div className="col-sm-1">
             <AddShow />
-            <Shows clicked={showToEditHandler} reDraw={[reDraw, setReDraw]} />
+            <Shows clicked={showToEditHandler}  />
           </div>
           {showID ? (
             <>
