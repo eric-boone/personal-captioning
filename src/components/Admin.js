@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import useFormValidation from "./useFormValidation";
 import firebase from "../firebase/firebase";
@@ -35,7 +36,20 @@ function Admin() {
 
   return (
     <div className="text-light">
-      <p>Create User</p>
+      <p>
+        <Link
+          to={{
+            pathname: "/"
+          }}
+        >
+          <span role="img" aria-label="home">
+            🏡
+          </span>
+        </Link>
+        <span role="img" aria-label="home">
+          | Create User ＋
+        </span>
+      </p>
       <form onSubmit={handleSubmit}>
         <input
           onChange={handleChange}
@@ -45,6 +59,8 @@ function Admin() {
           value={values.name}
           autoComplete="off"
         />
+        <br />
+        <br />
         <input
           className={errors.email && "border border-danger"}
           onChange={handleChange}
@@ -54,6 +70,8 @@ function Admin() {
           value={values.email}
           autoComplete="off"
         />
+        <br />
+        <br />
         <input
           className={errors.email && "border border-danger"}
           type="password"
@@ -63,6 +81,8 @@ function Admin() {
           autoComplete="off"
           onChange={handleChange}
         />
+        <br />
+        <br />
         <button type="submit" disabled={isSubmitting}>
           Add
         </button>

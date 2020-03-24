@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import AddShow from "./AddShow";
 import Shows from "./Shows";
@@ -20,7 +21,20 @@ function Builder() {
   return (
     <div className="text-light">
       <p>
-        <span style={{ color: "orange" }}>////</span> ShowBuilder
+        <p>
+          <Link
+            to={{
+              pathname: "/",
+            }}
+          >
+            <span role="img" aria-label="home">
+              🏡
+            </span>
+          </Link>
+            <span role="img" aria-label="home">
+            |  ShowBuilder 🏗
+            </span>
+        </p>
       </p>
       <div className="container-fluid">
         <div className="row">

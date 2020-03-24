@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Admin from "./components/Admin";
 import Builder from "./components/Builder/Builder";
+import Presenter from "./components/Presenter/Presenter";
 import Home from "./components/Home";
 import Print from "./components/Builder/Print";
 import useAuth from "./components/useAuth";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/admin" component={Admin} />
           <Route path="/builder" component={Builder} />
           <Route path="/print" component={Print} />
+          <Route path="/presenter" component={Presenter} />
         </Switch>
       </FirebaseContext.Provider>
     </BrowserRouter>

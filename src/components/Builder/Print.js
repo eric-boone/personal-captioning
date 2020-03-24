@@ -43,12 +43,12 @@ function Print(props) {
   };
 
   const theShow = () => {
-    let thing = [];
+    let theShowContainer = [];
     if (theWholeShebang) {
       for (let x = 0; x < theWholeShebang.showSlides.length; x++) {
         const element = theWholeShebang.showSlides[x];
         console.log("element.slide " + x, element.slide);
-        thing.push(
+        theShowContainer.push(
           <Fragment key={x}>
             <tr>
               <td rowSpan="3">#{element.slide.slideNumber + 1}</td>
@@ -80,7 +80,7 @@ function Print(props) {
       }
       console.log("Print.js - theShow");
     }
-    return thing;
+    return theShowContainer;
   };
 
   const theCharacterName = (x) => {

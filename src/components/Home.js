@@ -16,8 +16,13 @@ function Home() {
           <Link to="/builder" className="btn btn-outline-light">
             Build show
           </Link>
+          <br />
+          <Link to="/presenter" className="btn btn-outline-light mt-1">
+            Present show
+          </Link>
+          <br />
           <div
-            className="btn btn-outline-light ml-1"
+            className="btn btn-outline-light mt-1"
             onClick={() => {
               firebase.logout();
             }}
