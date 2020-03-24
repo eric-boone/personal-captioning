@@ -174,7 +174,7 @@ function AddSlide(props) {
           >
             {/* {JSON.stringify(props.showID)} */}
             {/* {console.log("characterList", characterList)} */}
-            <p className="float-left">{showTitle}</p>
+            <p className="float-left mr-2">{showTitle} </p>
             <p>
               <Link to={{
                 pathname: "/print",

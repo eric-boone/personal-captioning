@@ -119,6 +119,7 @@ function Print(props) {
           </span>
         </Link>
       </p>
+      {JSON.stringify(props)}
       <p className="print-show-title">print {showTitle()}</p>
       <table className="table text-light print-show-table">
         <thead>

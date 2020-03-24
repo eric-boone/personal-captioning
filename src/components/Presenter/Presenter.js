@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Shows from "../Builder/Shows";
 import PresenterSlides from "./PresenterSlides";
 
-export const Presenter = () => {
+function Presenter() {
   const [showID, setShowID] = useState("");
   const [reDraw, setReDraw] = useState(false);
 
@@ -34,13 +34,15 @@ export const Presenter = () => {
           <div className="col-sm-1">
             <Shows clicked={showToEditHandler} reDraw={[reDraw, setReDraw]} />
           </div>
-          <div className="col-md-5">
-            <PresenterSlides />
-          </div>
+          {showID ? (
+            <div className="col-md-5">
+              <PresenterSlides showID={showID} />
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Presenter;
