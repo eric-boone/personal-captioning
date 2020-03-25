@@ -4,6 +4,7 @@ import { FirebaseContext } from "../../firebase/firebase";
 function PresenterSlides(props) {
   const { firebase } = useContext(FirebaseContext);
   const [showID, setShowID] = useState(props.showID.toString());
+  // const [showTitle, setShowTitle] = useState("");
   const [slideNumber, setSlideNumber] = useState();
   const [theWholeShebang, setTheWholeShebang] = useState();
   const [characters, setCharacters] = useState([]);
@@ -13,7 +14,7 @@ function PresenterSlides(props) {
   useEffect(() => {
     getShow();
     console.log("PresenterSlides.js - useEffect");
-  }, []);
+  }, [props]);
 
   const getShow = () => {
     docRef
@@ -34,9 +35,20 @@ function PresenterSlides(props) {
     console.log("Print.js - getShow");
   };
 
+  const showTitle = () => {
+    console.log("Print.js - showTitle");
+    if (theWholeShebang) {
+      return theWholeShebang.showTitle;
+    }
+  };
+
   return (
     <div>
       <p>{JSON.stringify(props)}</p>
+      {showID ? 
+      <p>{showTitle()}</p>
+      // <p>{theWholeShebang}</p>
+      : null}
     </div>
   );
 }
